@@ -23,10 +23,6 @@ Vagrant.configure("2") do |config|
       :name => "gluster2", 
       :ip => "192.168.29.3" 
     },
-    { 
-      :name => "gluster3", 
-      :ip => "192.168.29.4" 
-    }
   ]
 
   # Provision each of the VMs.
@@ -39,7 +35,7 @@ Vagrant.configure("2") do |config|
       config.vm.network :private_network, ip: opts[:ip]
       
       # Provision both VMs using Ansible after the last VM is booted.
-      if opts[:name] == "gluster3"
+      if opts[:name] == "gluster2"
         config.vm.provision "ansible" do |ansible|
           ansible.playbook = "playbooks/glustercftp.yml"
           ansible.inventory_path = "inventory"
