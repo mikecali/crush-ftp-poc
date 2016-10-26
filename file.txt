@@ -1,0 +1,9 @@
+fog-libvirt (0.0.3)
+  - Version Constraint: 0.0.3
+vagrant-hostmanager (1.8.5)
+vagrant-persistent-storage (0.0.20)
+vagrant-proxyconf (1.5.2)
+vagrant-scp (0.5.7)
+vagrant-vbguest (0.13.0)
+winrm (1.8.1)
+winrm-fs (0.4.3)
